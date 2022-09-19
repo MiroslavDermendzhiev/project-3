@@ -1,3 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 @import "./base/normalize";
 @import "./utils/variables";
+
+header {
+  text-align: center;
+  font-family: $text-font;
+  .logo {
+    height: 63px;
+    box-shadow: 0px 1px 5px 0.5px #bebebe;
+    position: relative;
+    z-index: 10;
+    &-img {
+      width: 165px;
+      margin-top: 25px;
+    }
+  }
+  .location {
+    background: $clr-bckgr--secondary;
+    color: $text-clr--light;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-location-dot {
+      position: relative;
+      right: 17px;
+      font-size: 17px;
+    }
+  }
+  .intro {
+    background: $clr-bckgr--primary;
+    height: 290px;
+    &-title {
+      margin: 0px;
+      font-size: 24px;
+      font-weight: 900;
+      padding-top: 40px;
+    }
+    &-paragraph {
+      width: 306px;
+      margin: 0px auto;
+      font-size: 18px;
+      color: $text-clr--light;
+      padding-top: 40px;
+    }
+    &-btn {
+      margin-top: 30px;
+      height: 50px;
+      width: 220px;
+      border: 3px hidden #d8d8d8;
+      border-radius: 50px;
+      color: white;
+      background: rgb(78, 9, 121);
+      background: linear-gradient(
+        355deg,
+        rgba(78, 9, 121, 1) 0%,
+        rgba(150, 94, 212, 1) 0%,
+        rgba(245, 69, 231, 0.8242647400757178) 100%
+      );
+      &--clickable {
+        color: white;
+        text-decoration: none;
+        width: 220px;
+        padding: 14px 21px;
+        border: inherit;
+        border-radius: 30px;
+      }
+    }
+  }
+}
