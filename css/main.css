@@ -309,9 +309,12 @@ template {
   display: none;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   text-align: center;
-  font-family: "Roboto", sans-serif;
 }
 header .logo {
   height: 63px;
@@ -360,8 +363,8 @@ header .intro-btn {
   border: 3px hidden #d8d8d8;
   border-radius: 50px;
   color: white;
-  background: rgb(78, 9, 121);
-  background: linear-gradient(355deg, rgb(78, 9, 121) 0%, rgb(150, 94, 212) 0%, rgba(245, 69, 231, 0.8242647401) 100%);
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0px 3px 8px 0px rgba(128, 128, 128, 0.8196078431);
 }
 header .intro-btn--clickable {
   color: white;
@@ -370,6 +373,48 @@ header .intro-btn--clickable {
   padding: 14px 21px;
   border: inherit;
   border-radius: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+main .steps {
+  font-weight: 700;
+  height: 380px;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 27px;
+}
+main .steps-title {
+  padding-bottom: 0px;
+  font-weight: 800;
+}
+main .steps-first, main .steps-second, main .steps-third {
+  background: #f6f6f6;
+  width: 320px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px 0px lightgrey;
+}
+main .steps-first--icon, main .steps-second--icon, main .steps-third--icon {
+  margin: 0px 26px;
+  width: 14px;
+  padding-left: 7px;
+  font-size: 18px;
+  color: rgba(46, 46, 46, 0.55);
+}
+main .steps-third {
+  background-color: rgba(147, 86, 220, 0.1);
+  margin-bottom: 40px;
+}
+main .steps-third--icon {
+  color: #9356dc;
 }
 
 /*# sourceMappingURL=main.css.map */
