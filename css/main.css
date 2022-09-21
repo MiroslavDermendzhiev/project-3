@@ -378,6 +378,7 @@ header .intro-btn--clickable {
 main {
   display: flex;
   justify-content: center;
+  counter-reset: steps-number;
 }
 main .steps {
   font-weight: 700;
@@ -389,7 +390,8 @@ main .steps {
   gap: 27px;
 }
 main .steps-title {
-  padding-bottom: 0px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   font-weight: 800;
 }
 main .steps-first, main .steps-second, main .steps-third {
@@ -403,11 +405,26 @@ main .steps-first, main .steps-second, main .steps-third {
   box-shadow: 0px 3px 15px 0px lightgrey;
 }
 main .steps-first--icon, main .steps-second--icon, main .steps-third--icon {
-  margin: 0px 26px;
+  margin: 0px 26px 0px 10px;
   width: 14px;
-  padding-left: 7px;
+  padding-left: 0px;
   font-size: 18px;
   color: rgba(46, 46, 46, 0.55);
+}
+main .steps-first::before, main .steps-second::before, main .steps-third::before {
+  counter-increment: steps-number;
+  content: counter(steps-number);
+  width: 16px;
+  height: 18px;
+  padding-left: 8px;
+  padding-top: 6px;
+  font-size: 13.5px;
+  border-radius: 15px;
+  background: #9356dc;
+  color: white;
+  position: relative;
+  right: 13px;
+  font-weight: 400;
 }
 main .steps-third {
   background-color: rgba(147, 86, 220, 0.1);
