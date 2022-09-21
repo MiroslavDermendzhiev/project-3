@@ -101,12 +101,6 @@ main {
         font-size: 18px;
         color: rgba(46, 46, 46, 0.55);
       }
-      // &--counter {
-      //   width: 20px;
-      //   height: 20px;
-      //   background: red;
-      //   color: white;
-      // }
       &::before {
         counter-increment: steps-number;
         content: counter(steps-number);
