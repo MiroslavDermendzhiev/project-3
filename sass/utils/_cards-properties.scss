@@ -1,0 +1,28 @@
+@mixin cards-properties {
+  background: white;
+  height: 250px;
+  width: 334px;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  border-radius: 15px;
+  box-shadow: $shadow-cards;
+  &--img {
+    transform: scale(1.04);
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  &--name {
+    padding-left: 12px;
+    margin-bottom: 4px;
+    margin-top: 17px;
+    font-weight: 800;
+  }
+  &--location {
+    padding-left: 12px;
+    margin-top: 0px;
+    font-size: 17px;
+  }
+}

@@ -377,7 +377,8 @@ header .intro-btn--clickable {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   counter-reset: steps-number;
 }
 main .steps {
@@ -402,7 +403,7 @@ main .steps-first, main .steps-second, main .steps-third {
   align-items: center;
   margin-left: 10px;
   border-radius: 20px;
-  box-shadow: 0px 3px 15px 0px lightgrey;
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 main .steps-first--icon, main .steps-second--icon, main .steps-third--icon {
   margin: 0px 26px 0px 10px;
@@ -414,17 +415,17 @@ main .steps-first--icon, main .steps-second--icon, main .steps-third--icon {
 main .steps-first::before, main .steps-second::before, main .steps-third::before {
   counter-increment: steps-number;
   content: counter(steps-number);
+  background: #9356dc;
+  color: white;
+  position: relative;
+  font-size: 13.5px;
+  font-weight: 400;
   width: 16px;
   height: 18px;
   padding-left: 8px;
   padding-top: 6px;
-  font-size: 13.5px;
   border-radius: 15px;
-  background: #9356dc;
-  color: white;
-  position: relative;
   right: 13px;
-  font-weight: 400;
 }
 main .steps-third {
   background-color: rgba(147, 86, 220, 0.1);
@@ -432,6 +433,46 @@ main .steps-third {
 }
 main .steps-third--icon {
   color: #9356dc;
+}
+main .restaurants {
+  height: 820px;
+  width: 100%;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .restaurants-title {
+  margin-right: 203px;
+  margin-top: 70px;
+}
+main .restaurants-cards {
+  background: white;
+  height: 250px;
+  width: 334px;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 0 2px 20px -8px rgba(0, 0, 0, 0.3);
+}
+main .restaurants-cards--img {
+  transform: scale(1.04);
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+main .restaurants-cards--name {
+  padding-left: 12px;
+  margin-bottom: 4px;
+  margin-top: 17px;
+  font-weight: 800;
+}
+main .restaurants-cards--location {
+  padding-left: 12px;
+  margin-top: 0px;
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=main.css.map */
