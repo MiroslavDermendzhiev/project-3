@@ -475,9 +475,12 @@ main .restaurants-cards--location {
   margin-top: 0px;
   font-size: 17px;
 }
-main .restaurants .restaurants-the_enchanted_plate img {
+main .restaurants-the_enchanted_plate img {
   transform: scale(1.02);
   object-position: 0px -151px;
+}
+main .restaurants-le_gourmand img {
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=main.css.map */
