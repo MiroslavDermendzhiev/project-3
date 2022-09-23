@@ -123,15 +123,18 @@ main {
     }
   }
   .restaurants {
-    height: 1500px;
+    height: 1230px;
     width: 100%;
     background: $clr-bckgr--primary;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     &-title {
       margin-right: 203px;
-      margin-top: 70px;
+      margin-top: 55px;
+      margin-bottom: 0px;
+      font-weight: 800;
     }
     &-cards {
       @include cards-properties;
@@ -149,3 +152,5 @@ main {
     }
   }
 }
+
+@include footer;
