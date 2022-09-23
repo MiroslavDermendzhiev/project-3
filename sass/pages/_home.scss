@@ -1,0 +1,146 @@
+* {
+  font-family: $text-font;
+}
+header {
+  text-align: center;
+  .logo {
+    height: 63px;
+    box-shadow: 0px 1px 5px 0.5px #bebebe;
+    position: relative;
+    z-index: 10;
+    &-img {
+      width: 165px;
+      margin-top: 25px;
+    }
+  }
+  .location {
+    background: $clr-bckgr--secondary;
+    color: $text-clr--light;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-location-dot {
+      position: relative;
+      right: 17px;
+      font-size: 17px;
+    }
+  }
+  .intro {
+    background: $clr-bckgr--primary;
+    height: 290px;
+    &-title {
+      margin: 0px;
+      font-size: 24px;
+      font-weight: 900;
+      padding-top: 40px;
+    }
+    &-paragraph {
+      width: 306px;
+      margin: 0px auto;
+      font-size: 18px;
+      color: $text-clr--light;
+      padding-top: 40px;
+    }
+    &-btn {
+      margin-top: 30px;
+      height: 50px;
+      width: 220px;
+      border: 3px hidden #d8d8d8;
+      border-radius: 50px;
+      color: white;
+      background: linear-gradient(355deg, $clr-primary 0%, $clr-secondary 100%);
+      box-shadow: 0px 3px 8px 0px #808080d1;
+      &--clickable {
+        color: white;
+        text-decoration: none;
+        width: 220px;
+        padding: 14px 21px;
+        border: inherit;
+        border-radius: 30px;
+      }
+    }
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  counter-reset: steps-number;
+  .steps {
+    font-weight: 700;
+    height: 380px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 27px;
+    &-title {
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: 800;
+    }
+    &-first,
+    &-second,
+    &-third {
+      background: $clr-bckgr--primary;
+      width: 320px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      border-radius: 20px;
+      box-shadow: $shadow-steps;
+      &--icon {
+        margin: 0px 26px 0px 10px;
+        width: 14px;
+        padding-left: 0px;
+        font-size: 18px;
+        color: rgba(46, 46, 46, 0.55);
+      }
+      &::before {
+        counter-increment: steps-number;
+        content: counter(steps-number);
+        background: $clr-primary;
+        color: white;
+        position: relative;
+        font-size: 13.5px;
+        font-weight: 400;
+        width: 16px;
+        height: 18px;
+        padding-left: 8px;
+        padding-top: 6px;
+        border-radius: 15px;
+        right: 13px;
+      }
+    }
+    &-third {
+      background-color: rgba(147, 86, 220, 0.1);
+      margin-bottom: 40px;
+      &--icon {
+        color: $clr-primary;
+      }
+    }
+  }
+  .restaurants {
+    height: 820px;
+    width: 100%;
+    background: $clr-bckgr--primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+      margin-right: 203px;
+      margin-top: 70px;
+    }
+    &-cards {
+      @include cards-properties;
+    }
+    .restaurants-the_enchanted_plate {
+      img {
+        transform: scale(1.02);
+        object-position: 0px -151px;
+      }
+    }
+  }
+}

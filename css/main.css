@@ -467,12 +467,17 @@ main .restaurants-cards--name {
   padding-left: 12px;
   margin-bottom: 4px;
   margin-top: 17px;
+  font-size: 18px;
   font-weight: 800;
 }
 main .restaurants-cards--location {
   padding-left: 12px;
   margin-top: 0px;
   font-size: 17px;
+}
+main .restaurants .restaurants-the_enchanted_plate img {
+  transform: scale(1.02);
+  object-position: 0px -151px;
 }
 
 /*# sourceMappingURL=main.css.map */
