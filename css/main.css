@@ -493,6 +493,11 @@ main .restaurants-cards--new {
   font-size: 14px;
   font-weight: 500;
 }
+main .restaurants-cards--heart {
+  position: relative;
+  bottom: 87px;
+  left: 290px;
+}
 main .restaurants-the_enchanted_plate img {
   transform: scale(1.02);
   object-position: 0px -151px;
