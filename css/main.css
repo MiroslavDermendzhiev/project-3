@@ -493,10 +493,24 @@ main .restaurants-cards--new {
   font-size: 14px;
   font-weight: 500;
 }
-main .restaurants-cards--heart {
+main .restaurants-cards--heart_btn_icon {
+  transform: scale(1.4, 1.6);
+}
+main .restaurants-cards .fa-solid {
+  display: none;
+}
+main .restaurants-cards div.restaurants-cards--heart_btn {
+  height: 27px;
+  width: 23px;
   position: relative;
-  bottom: 87px;
+  bottom: 82px;
   left: 290px;
+}
+main .restaurants-cards div.restaurants-cards--heart_btn:hover .fa-regular {
+  display: none;
+}
+main .restaurants-cards div.restaurants-cards--heart_btn:hover .fa-solid {
+  display: inline-block;
 }
 main .restaurants-the_enchanted_plate img {
   transform: scale(1.02);

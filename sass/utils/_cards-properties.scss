@@ -41,9 +41,29 @@
     font-size: 14px;
     font-weight: 500;
   }
-  &--heart {
+
+  &--heart_btn_icon {
+    // position: relative;
+    // bottom: 82px;
+    // left: 290px;
+    transform: scale(1.4, 1.6);
+  }
+  .fa-solid {
+    display: none;
+  }
+  div.restaurants-cards--heart_btn {
+    height: 27px;
+    width: 23px;
     position: relative;
-    bottom: 87px;
+    bottom: 82px;
     left: 290px;
+  }
+  div.restaurants-cards--heart_btn:hover {
+    .fa-regular {
+      display: none;
+    }
+    .fa-solid {
+      display: inline-block;
+    }
   }
 }
