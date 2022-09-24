@@ -514,6 +514,10 @@ footer .nav-list--item i {
   font-size: 13px;
   margin-right: 10px;
 }
+footer .nav-list--item i.fa-handshake-angle {
+  transform: scale(0.7, 1);
+  margin-right: 6px;
+}
 footer .nav-list--item a {
   text-decoration: none;
   color: white;
