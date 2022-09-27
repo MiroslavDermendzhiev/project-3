@@ -43,9 +43,6 @@
   }
 
   &--heart_btn_icon {
-    // position: relative;
-    // bottom: 82px;
-    // left: 290px;
     transform: scale(1.4, 1.6);
   }
   .fa-solid {
@@ -64,6 +61,13 @@
     }
     .fa-solid {
       display: inline-block;
+      background: -webkit-linear-gradient(
+        270deg,
+        $clr-primary 0%,
+        $clr-secondary 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }

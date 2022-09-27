@@ -511,6 +511,9 @@ main .restaurants-cards div.restaurants-cards--heart_btn:hover .fa-regular {
 }
 main .restaurants-cards div.restaurants-cards--heart_btn:hover .fa-solid {
   display: inline-block;
+  background: -webkit-linear-gradient(270deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main .restaurants-the_enchanted_plate img {
   transform: scale(1.02);
