@@ -41,20 +41,21 @@
     font-size: 14px;
     font-weight: 500;
   }
-
+  //first way-----------------------
   &--heart_btn_icon {
     transform: scale(1.4, 1.6);
   }
   .fa-solid {
     display: none;
   }
-  div.restaurants-cards--heart_btn {
+  .restaurants-cards--heart_btn {
     height: 27px;
     width: 23px;
     position: relative;
     bottom: 82px;
     left: 290px;
   }
+
   div.restaurants-cards--heart_btn:hover {
     .fa-regular {
       display: none;
@@ -69,5 +70,18 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+    //second way---------------------------
+
+    // .restaurants-cards--heart_btn path {
+    //   fill: transparent;
+    //   stroke-width: 30;
+    //   stroke: black;
+    //   transform: scale(0.9, 1);
+    //   &:hover {
+    //     fill: green;
+    //     stroke-width: 0px;
+    //   }
+    // }
   }
 }

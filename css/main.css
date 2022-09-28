@@ -411,6 +411,9 @@ main .steps-first--icon, main .steps-second--icon, main .steps-third--icon {
   padding-left: 0px;
   font-size: 18px;
   color: rgba(46, 46, 46, 0.55);
+  fill: transparent;
+  stroke: 10;
+  stroke: #9356dc;
 }
 main .steps-first::before, main .steps-second::before, main .steps-third::before {
   counter-increment: steps-number;
@@ -499,7 +502,7 @@ main .restaurants-cards--heart_btn_icon {
 main .restaurants-cards .fa-solid {
   display: none;
 }
-main .restaurants-cards div.restaurants-cards--heart_btn {
+main .restaurants-cards .restaurants-cards--heart_btn {
   height: 27px;
   width: 23px;
   position: relative;
