@@ -435,10 +435,26 @@ main .steps {
   justify-content: center;
   gap: 27px;
 }
+@media all and (min-width: 992px) {
+  main .steps {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    height: auto;
+    padding: 40px 0px;
+  }
+}
 main .steps-title {
   margin-top: 15px;
   margin-bottom: 5px;
   font-weight: 800;
+}
+@media all and (min-width: 992px) {
+  main .steps-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
 }
 main .steps-first, main .steps-second, main .steps-third {
   background: #f6f6f6;
@@ -479,6 +495,11 @@ main .steps-third {
   background-color: rgba(147, 86, 220, 0.1);
   margin-bottom: 40px;
 }
+@media all and (min-width: 992px) {
+  main .steps-third {
+    margin-bottom: 0px;
+  }
+}
 main .steps-third--icon {
   color: #9356dc;
 }
@@ -491,11 +512,29 @@ main .restaurants {
   align-items: center;
   gap: 20px;
 }
+@media all and (min-width: 992px) {
+  main .restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    padding: 40px 0px;
+  }
+}
 main .restaurants-title {
   margin-right: 203px;
   margin-top: 55px;
   margin-bottom: 0px;
   font-weight: 800;
+}
+@media all and (min-width: 992px) {
+  main .restaurants-title {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }
 main .restaurants-cards {
   background: white;
@@ -588,6 +627,12 @@ footer {
   height: 200px;
   padding-right: 155px;
 }
+@media all and (min-width: 992px) {
+  footer {
+    padding: 25px 0px;
+    height: 60px;
+  }
+}
 footer .nav-title {
   font-family: "Shrikhand", cursive;
   margin-right: 70px;
@@ -596,12 +641,28 @@ footer .nav-title {
   margin-top: 25px;
   margin-bottom: 5px;
 }
+@media all and (min-width: 992px) {
+  footer .nav-title {
+    margin: 0;
+  }
+}
 footer .nav-list {
   list-style: none;
   padding: 0px;
 }
+@media all and (min-width: 992px) {
+  footer .nav-list {
+    display: flex;
+    gap: 80px;
+  }
+}
 footer .nav-list--item {
   margin-bottom: 8px;
+}
+@media all and (min-width: 992px) {
+  footer .nav-list--item {
+    display: inline-block;
+  }
 }
 footer .nav-list--item i {
   font-size: 13px;
