@@ -374,6 +374,10 @@ header .intro-btn--clickable {
   border: inherit;
   border-radius: 30px;
 }
+header .intro-btn:hover {
+  box-shadow: 0px 5px 10px 5px rgba(128, 128, 128, 0.82);
+  opacity: 0.9;
+}
 
 main {
   display: flex;
@@ -496,23 +500,26 @@ main .restaurants-cards--new {
   font-size: 14px;
   font-weight: 500;
 }
-main .restaurants-cards--heart_btn_icon {
+main .restaurants-cards--heart_container_icon {
   transform: scale(1.4, 1.6);
 }
 main .restaurants-cards .fa-solid {
   display: none;
 }
-main .restaurants-cards .restaurants-cards--heart_btn {
+main .restaurants-cards .restaurants-cards--heart_container {
   height: 27px;
   width: 23px;
   position: relative;
   bottom: 82px;
   left: 290px;
 }
-main .restaurants-cards div.restaurants-cards--heart_btn:hover .fa-regular {
+main .restaurants-cards .restaurants-cards--heart_container_icon {
+  position: absolute;
+}
+main .restaurants-cards div.restaurants-cards--heart_container:hover .fa-regular {
   display: none;
 }
-main .restaurants-cards div.restaurants-cards--heart_btn:hover .fa-solid {
+main .restaurants-cards div.restaurants-cards--heart_container:hover .fa-solid {
   display: inline-block;
   background: -webkit-linear-gradient(270deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;

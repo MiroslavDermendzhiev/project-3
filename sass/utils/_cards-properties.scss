@@ -41,22 +41,26 @@
     font-size: 14px;
     font-weight: 500;
   }
+
   //first way-----------------------
-  &--heart_btn_icon {
+  &--heart_container_icon {
     transform: scale(1.4, 1.6);
   }
   .fa-solid {
     display: none;
   }
-  .restaurants-cards--heart_btn {
+  .restaurants-cards--heart_container {
     height: 27px;
     width: 23px;
     position: relative;
     bottom: 82px;
     left: 290px;
+    &_icon {
+      position: absolute;
+    }
   }
 
-  div.restaurants-cards--heart_btn:hover {
+  div.restaurants-cards--heart_container:hover {
     .fa-regular {
       display: none;
     }

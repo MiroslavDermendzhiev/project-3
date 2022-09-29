@@ -59,6 +59,10 @@ header {
         border: inherit;
         border-radius: 30px;
       }
+      &:hover {
+        box-shadow: 0px 5px 10px 5px rgb(128 128 128 / 82%);
+        opacity: 0.9;
+      }
     }
   }
 }
