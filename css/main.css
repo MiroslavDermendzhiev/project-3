@@ -435,13 +435,13 @@ main .steps {
   justify-content: center;
   gap: 27px;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 678px) {
   main .steps {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     height: auto;
-    padding: 40px 0px;
+    padding: 40px 40px;
   }
 }
 main .steps-title {
@@ -449,7 +449,7 @@ main .steps-title {
   margin-bottom: 5px;
   font-weight: 800;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 678px) {
   main .steps-title {
     width: 100%;
     text-align: center;
@@ -495,7 +495,7 @@ main .steps-third {
   background-color: rgba(147, 86, 220, 0.1);
   margin-bottom: 40px;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 678px) {
   main .steps-third {
     margin-bottom: 0px;
   }
@@ -512,7 +512,7 @@ main .restaurants {
   align-items: center;
   gap: 20px;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 678px) {
   main .restaurants {
     flex-direction: row;
     flex-wrap: wrap;
@@ -528,7 +528,7 @@ main .restaurants-title {
   margin-bottom: 0px;
   font-weight: 800;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 678px) {
   main .restaurants-title {
     width: 100%;
     text-align: center;
@@ -627,7 +627,7 @@ footer {
   height: 200px;
   padding-right: 155px;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 678px) {
   footer {
     padding: 25px 0px;
     height: 60px;
@@ -641,7 +641,7 @@ footer .nav-title {
   margin-top: 25px;
   margin-bottom: 5px;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 678px) {
   footer .nav-title {
     margin: 0;
   }
@@ -650,7 +650,7 @@ footer .nav-list {
   list-style: none;
   padding: 0px;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 678px) {
   footer .nav-list {
     display: flex;
     gap: 80px;
@@ -659,7 +659,7 @@ footer .nav-list {
 footer .nav-list--item {
   margin-bottom: 8px;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 678px) {
   footer .nav-list--item {
     display: inline-block;
   }
