@@ -1,8 +1,10 @@
 * {
   font-family: $text-font;
 }
+@include loading-spinner;
 header {
   text-align: center;
+
   .logo {
     height: 63px;
     box-shadow: 0px 1px 5px 0.5px #bebebe;
