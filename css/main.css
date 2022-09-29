@@ -313,6 +313,46 @@ template {
   font-family: "Roboto", sans-serif;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: hide 0s 3s forwards;
+  z-index: 10000;
+  background: rgba(233, 233, 233, 0.5);
+}
+
+.loader::after {
+  content: "";
+  width: 55px;
+  height: 55px;
+  border: 15px solid transparent;
+  border-top-color: #383838;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hide {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 header {
   text-align: center;
 }
@@ -365,6 +405,7 @@ header .intro-btn {
   color: white;
   background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
   box-shadow: 0px 3px 8px 0px rgba(128, 128, 128, 0.8196078431);
+  transition: box-shadow 0.5s, opacity 0.5s;
 }
 header .intro-btn--clickable {
   color: white;
@@ -465,6 +506,7 @@ main .restaurants-cards {
   color: black;
   border-radius: 15px;
   box-shadow: 0 2px 20px -8px rgba(0, 0, 0, 0.3);
+  transition: scale 0.5s;
 }
 main .restaurants-cards--img {
   transform: scale(1.04);
@@ -504,7 +546,8 @@ main .restaurants-cards--heart_container_icon {
   transform: scale(1.4, 1.6);
 }
 main .restaurants-cards .fa-solid {
-  display: none;
+  opacity: 0;
+  transition: opacity 500ms;
 }
 main .restaurants-cards .restaurants-cards--heart_container {
   height: 27px;
@@ -516,14 +559,17 @@ main .restaurants-cards .restaurants-cards--heart_container {
 main .restaurants-cards .restaurants-cards--heart_container_icon {
   position: absolute;
 }
-main .restaurants-cards div.restaurants-cards--heart_container:hover .fa-regular {
-  display: none;
-}
 main .restaurants-cards div.restaurants-cards--heart_container:hover .fa-solid {
-  display: inline-block;
+  opacity: 1;
   background: -webkit-linear-gradient(270deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+main .restaurants-cards:hover {
+  scale: 1.05;
+}
+main .restaurants-le_gourmand .restaurants-cards--heart_container, main .restaurants-bastille .restaurants-cards--heart_container {
+  bottom: 53px;
 }
 main .restaurants-the_enchanted_plate img {
   transform: scale(1.02);

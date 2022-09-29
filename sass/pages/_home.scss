@@ -53,6 +53,7 @@ header {
       color: white;
       background: linear-gradient(355deg, $clr-primary 0%, $clr-secondary 100%);
       box-shadow: 0px 3px 8px 0px #808080d1;
+      transition: box-shadow 0.5s, opacity 0.5s;
       &--clickable {
         color: white;
         text-decoration: none;
@@ -147,6 +148,12 @@ main {
     }
     &-cards {
       @include cards-properties;
+    }
+    &-le_gourmand,
+    &-bastille {
+      .restaurants-cards--heart_container {
+        bottom: 53px;
+      }
     }
     &-the_enchanted_plate {
       img {

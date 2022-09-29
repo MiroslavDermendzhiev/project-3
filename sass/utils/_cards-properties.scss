@@ -7,6 +7,8 @@
   color: black;
   border-radius: 15px;
   box-shadow: $shadow-cards;
+  transition: scale 0.5s;
+
   &--img {
     transform: scale(1.04);
     height: 170px;
@@ -42,12 +44,12 @@
     font-weight: 500;
   }
 
-  //first way-----------------------
   &--heart_container_icon {
     transform: scale(1.4, 1.6);
   }
   .fa-solid {
-    display: none;
+    opacity: 0;
+    transition: opacity 500ms;
   }
   .restaurants-cards--heart_container {
     height: 27px;
@@ -61,11 +63,8 @@
   }
 
   div.restaurants-cards--heart_container:hover {
-    .fa-regular {
-      display: none;
-    }
     .fa-solid {
-      display: inline-block;
+      opacity: 1;
       background: -webkit-linear-gradient(
         270deg,
         $clr-primary 0%,
@@ -74,18 +73,8 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
-    //second way---------------------------
-
-    // .restaurants-cards--heart_btn path {
-    //   fill: transparent;
-    //   stroke-width: 30;
-    //   stroke: black;
-    //   transform: scale(0.9, 1);
-    //   &:hover {
-    //     fill: green;
-    //     stroke-width: 0px;
-    //   }
-    // }
+  }
+  &:hover {
+    scale: 1.05;
   }
 }
