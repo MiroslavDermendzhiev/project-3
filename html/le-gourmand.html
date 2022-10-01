@@ -12,25 +12,30 @@
     <title>La Gourmand</title>
   </head>
   <body>
-    <header>
+    <header class="restaurants-header">
       <i class="fa-solid fa-arrow-left"></i>
       <img
-        class="logo-img"
+        class="restaurants-header--logo_img"
         src="/images/logo/ohmyfood.png"
         alt="ohmyfood logo"
       />
+      <div class="restaurants-header--empty_div"></div>
     </header>
-    <main>
-      <img
-        class="main-img"
-        src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-        alt="Le Gourmand food portion"
-      />
+    <main class="restaurants-main">
+      <div class="restaurants-main--img_div">
+        <img
+          class="restaurants-main--img_div--main_img"
+          src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+          alt="Le Gourmand food portion"
+        />
+      </div>
       <section class="menu">
-        <h2>La Gourmand</h2>
-        <i
-          class="fa-regular fa-heart restaurants-cards--heart_container_icon"
-        ></i>
+        <div class="menu-title">
+          <h2>La Gourmand</h2>
+          <i
+            class="fa-regular fa-heart restaurants-cards--heart_container_icon"
+          ></i>
+        </div>
         <div class="menu-entrees">
           <h3 class="menu-type_title">ENTREES</h3>
           <button class="menu-buttons">
@@ -92,7 +97,7 @@
         </a>
       </section>
     </main>
-    <footer>
+    <footer class="restaurants-footer">
       <h2 class="nav-title">ohmyfood</h2>
       <nav class="nav">
         <ul class="nav-list">
