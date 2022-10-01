@@ -1,5 +1,5 @@
 .restaurants-main {
-  height: 1600px;
+  height: 1800px;
   &--img_div {
     overflow: hidden;
     position: absolute;
@@ -14,6 +14,8 @@
     position: relative;
     border-radius: 40px 40px 0px 0px;
     top: 220px;
+    min-width: 375px;
+    //if I want to make the menues be 100% width just add the property here****************8
     &-title {
       display: flex;
       align-items: center;
@@ -23,11 +25,39 @@
         font-family: $title-font;
         font-size: 28px;
         font-weight: 500;
-        // margin-left: 20px;
       }
       .fa-heart {
         transform: scale(1.4, 1.6);
-        // margin-right: 40px;
+      }
+    }
+    &-content {
+      padding: 0px 20px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      gap: 10px;
+      &-type {
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 10px;
+        width: 335px;
+        &::after {
+          content: "";
+          display: block;
+          width: 40px;
+          border-bottom: 3.5px solid $clr-tertiary;
+          padding-bottom: 5px;
+        }
+      }
+      &-buttons {
+        border: none;
+        border-radius: 15px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 120px;
+        align-content: space-between;
       }
     }
   }
