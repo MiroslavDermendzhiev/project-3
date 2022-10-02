@@ -310,7 +310,7 @@ template {
 }
 
 .restaurants-main {
-  height: 1800px;
+  height: 1407px;
 }
 .restaurants-main--img_div {
   overflow: hidden;
@@ -322,11 +322,13 @@ template {
   transform: scale(1.1);
 }
 .restaurants-main .menu {
+  height: 1187px;
   background: #f6f6f6;
   position: relative;
   border-radius: 40px 40px 0px 0px;
   top: 220px;
   min-width: 375px;
+  width: 100%;
 }
 .restaurants-main .menu-title {
   display: flex;
@@ -343,17 +345,20 @@ template {
   transform: scale(1.4, 1.6);
 }
 .restaurants-main .menu-content {
-  padding: 0px 20px;
+  padding: 0px 13px;
   display: flex;
   flex-direction: column;
   align-content: center;
-  gap: 10px;
+  gap: 13px;
+  margin-bottom: 32px;
 }
 .restaurants-main .menu-content-type {
   font-weight: 400;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 13px;
   width: 335px;
+  margin-bottom: 1px;
+  margin-left: 6px;
 }
 .restaurants-main .menu-content-type::after {
   content: "";
@@ -369,8 +374,44 @@ template {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 120px;
+  height: 68px;
   align-content: space-between;
+  padding: 0px 10px;
+  box-shadow: 0 2px 20px -8px rgba(0, 0, 0, 0.3);
+}
+.restaurants-main .menu-content-buttons_title {
+  margin-bottom: 0px;
+  font-size: 18px;
+  margin-top: 13px;
+}
+.restaurants-main .menu-content-buttons_description {
+  margin-bottom: 0px;
+  margin-top: 4px;
+  font-size: 15px;
+}
+.restaurants-main .menu-content-buttons_price {
+  margin-right: 10px;
+  margin-top: 40px;
+  font-weight: 600;
+}
+.restaurants-main .menu-order {
+  text-align: center;
+}
+.restaurants-main .menu-order_btn {
+  margin-top: 17px;
+  height: 50px;
+  width: 186px;
+  border: 3px hidden #d8d8d8;
+  border-radius: 50px;
+  color: white;
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0px 3px 8px 0px rgba(128, 128, 128, 0.8196078431);
+  transition: box-shadow 0.5s, opacity 0.5s;
+  cursor: pointer;
+}
+.restaurants-main .menu-order_btn:hover {
+  box-shadow: 0px 5px 10px 5px rgba(128, 128, 128, 0.82);
+  opacity: 0.9;
 }
 
 .restaurants-header {

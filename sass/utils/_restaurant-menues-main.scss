@@ -1,5 +1,5 @@
 .restaurants-main {
-  height: 1800px;
+  height: 1407px;
   &--img_div {
     overflow: hidden;
     position: absolute;
@@ -10,12 +10,13 @@
     }
   }
   .menu {
+    height: 1187px;
     background: $clr-bckgr--primary;
     position: relative;
     border-radius: 40px 40px 0px 0px;
     top: 220px;
     min-width: 375px;
-    //if I want to make the menues be 100% width just add the property here****************8
+    width: 100%; //if I want to make the menues be 100% width just add the property here****************8
     &-title {
       display: flex;
       align-items: center;
@@ -25,22 +26,26 @@
         font-family: $title-font;
         font-size: 28px;
         font-weight: 500;
+        // margin-bottom: 0px;
       }
       .fa-heart {
         transform: scale(1.4, 1.6);
       }
     }
     &-content {
-      padding: 0px 20px;
+      padding: 0px 13px;
       display: flex;
       flex-direction: column;
       align-content: center;
-      gap: 10px;
+      gap: 13px;
+      margin-bottom: 32px;
       &-type {
         font-weight: 400;
         font-size: 16px;
-        margin-top: 10px;
+        margin-top: 13px;
         width: 335px;
+        margin-bottom: 1px;
+        margin-left: 6px;
         &::after {
           content: "";
           display: block;
@@ -56,8 +61,56 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 120px;
+        height: 68px;
         align-content: space-between;
+        padding: 0px 10px;
+        box-shadow: 0 2px 20px -8px rgb(0 0 0 / 30%);
+        &_title {
+          margin-bottom: 0px;
+          font-size: 18px;
+          margin-top: 13px;
+        }
+        &_description {
+          margin-bottom: 0px;
+          margin-top: 4px;
+          font-size: 15px;
+        }
+        &_price {
+          margin-right: 10px;
+          margin-top: 40px;
+          font-weight: 600;
+        }
+      }
+    }
+    &-order {
+      text-align: center;
+      &_btn {
+        margin-top: 17px;
+        height: 50px;
+        width: 186px;
+        border: 3px hidden #d8d8d8;
+        border-radius: 50px;
+        color: white;
+        background: linear-gradient(
+          355deg,
+          $clr-primary 0%,
+          $clr-secondary 100%
+        );
+        box-shadow: 0px 3px 8px 0px #808080d1;
+        transition: box-shadow 0.5s, opacity 0.5s;
+        // &--clickable {
+        //   color: white;
+        //   text-decoration: none;
+        //   width: 220px;
+        //   padding: 14px 21px;
+        //   border: inherit;
+        //   border-radius: 30px;
+        // }
+        &:hover {
+          box-shadow: 0px 5px 10px 5px rgb(128 128 128 / 82%);
+          opacity: 0.9;
+        }
+        cursor: pointer;
       }
     }
   }
