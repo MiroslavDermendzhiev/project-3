@@ -1,22 +1,45 @@
 .restaurants-main {
   height: 1407px;
+  @include tablet-only {
+    height: 1100px;
+  }
+  @include desktop-only {
+    height: 770px;
+  }
   &--img_div {
     overflow: hidden;
     position: absolute;
+    @include desktop-only {
+      max-height: 770px;
+    }
     &--main_img {
       width: 100%;
       object-position: 0px 11px;
       transform: scale(1.1);
     }
   }
+
   .menu {
     height: 1187px;
+    @include tablet-only {
+      height: 880px;
+    }
+    @include desktop-only {
+      height: 550px;
+      max-width: 1150px;
+    } // 1300 for enchanted plate
     background: $clr-bckgr--primary;
     position: relative;
     border-radius: 40px 40px 0px 0px;
     top: 220px;
-    min-width: 375px;
-    width: 100%; //if I want to make the menues be 100% width just add the property here****************8
+    width: 375px; //min-width: 375px;
+    // width: 100%; //if I want to make the menues be 100% width just add the property here****************8
+    @include tablet-only {
+      width: 769px;
+    }
+    @include desktop-only {
+      width: 1101px;
+    }
     &-title {
       display: flex;
       align-items: center;
@@ -26,12 +49,25 @@
         font-family: $title-font;
         font-size: 28px;
         font-weight: 500;
+        width: 250px;
       }
       .restaurants-cards--heart_container {
         height: 20px;
         width: 18px;
       }
       @include heart;
+    }
+    &-content-wrapper {
+      @include desktop-only {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      @include tablet-only {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
     }
     &-content {
       padding: 0px 13px;
@@ -90,4 +126,10 @@
       }
     }
   }
+  .menu-enchanted_only {
+    height: 1300px;
+  }
+}
+.restaurant-main--enchanted_only {
+  height: 1520px;
 }

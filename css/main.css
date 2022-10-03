@@ -312,9 +312,24 @@ template {
 .restaurants-main {
   height: 1407px;
 }
+@media all and (max-width: 1100px) and (min-width: 768px) {
+  .restaurants-main {
+    height: 1100px;
+  }
+}
+@media all and (min-width: 1101px) {
+  .restaurants-main {
+    height: 770px;
+  }
+}
 .restaurants-main--img_div {
   overflow: hidden;
   position: absolute;
+}
+@media all and (min-width: 1101px) {
+  .restaurants-main--img_div {
+    max-height: 770px;
+  }
 }
 .restaurants-main--img_div--main_img {
   width: 100%;
@@ -327,8 +342,28 @@ template {
   position: relative;
   border-radius: 40px 40px 0px 0px;
   top: 220px;
-  min-width: 375px;
-  width: 100%;
+  width: 375px;
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
+  .restaurants-main .menu {
+    height: 880px;
+  }
+}
+@media all and (min-width: 1101px) {
+  .restaurants-main .menu {
+    height: 550px;
+    max-width: 1150px;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
+  .restaurants-main .menu {
+    width: 769px;
+  }
+}
+@media all and (min-width: 1101px) {
+  .restaurants-main .menu {
+    width: 1101px;
+  }
 }
 .restaurants-main .menu-title {
   display: flex;
@@ -340,6 +375,7 @@ template {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   font-weight: 500;
+  width: 250px;
 }
 .restaurants-main .menu-title .restaurants-cards--heart_container {
   height: 20px;
@@ -358,6 +394,20 @@ template {
   background: -webkit-linear-gradient(270deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media all and (min-width: 1101px) {
+  .restaurants-main .menu-content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
+  .restaurants-main .menu-content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }
 .restaurants-main .menu-content {
   padding: 0px 13px;
@@ -427,6 +477,13 @@ template {
 .restaurants-main .menu-order_btn:hover {
   box-shadow: 0px 5px 10px 5px rgba(128, 128, 128, 0.82);
   opacity: 0.9;
+}
+.restaurants-main .menu-enchanted_only {
+  height: 1300px;
+}
+
+.restaurant-main--enchanted_only {
+  height: 1520px;
 }
 
 .restaurants-header {
@@ -569,7 +626,16 @@ main .steps {
   justify-content: center;
   gap: 27px;
 }
-@media all and (min-width: 678px) {
+@media all and (min-width: 1101px) {
+  main .steps {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    height: auto;
+    padding: 40px 40px;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
   main .steps {
     flex-direction: row;
     flex-wrap: wrap;
@@ -583,7 +649,14 @@ main .steps-title {
   margin-bottom: 5px;
   font-weight: 800;
 }
-@media all and (min-width: 678px) {
+@media all and (min-width: 1101px) {
+  main .steps-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
   main .steps-title {
     width: 100%;
     text-align: center;
@@ -629,7 +702,12 @@ main .steps-third {
   background-color: rgba(147, 86, 220, 0.1);
   margin-bottom: 40px;
 }
-@media all and (min-width: 678px) {
+@media all and (min-width: 1101px) {
+  main .steps-third {
+    margin-bottom: 0px;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
   main .steps-third {
     margin-bottom: 0px;
   }
@@ -646,7 +724,17 @@ main .restaurants {
   align-items: center;
   gap: 20px;
 }
-@media all and (min-width: 678px) {
+@media all and (min-width: 1101px) {
+  main .restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    padding: 40px 0px;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
   main .restaurants {
     flex-direction: row;
     flex-wrap: wrap;
@@ -662,7 +750,15 @@ main .restaurants-title {
   margin-bottom: 0px;
   font-weight: 800;
 }
-@media all and (min-width: 678px) {
+@media all and (min-width: 1101px) {
+  main .restaurants-title {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
   main .restaurants-title {
     width: 100%;
     text-align: center;
@@ -759,7 +855,7 @@ footer {
   height: 200px;
   padding-right: 155px;
 }
-@media all and (min-width: 678px) {
+@media all and (min-width: 1101px) {
   footer {
     padding: 25px 0px;
     height: 60px;
@@ -773,7 +869,7 @@ footer .nav-title {
   margin-top: 25px;
   margin-bottom: 5px;
 }
-@media all and (min-width: 678px) {
+@media all and (min-width: 1101px) {
   footer .nav-title {
     margin: 0;
   }
@@ -782,7 +878,7 @@ footer .nav-list {
   list-style: none;
   padding: 0px;
 }
-@media all and (min-width: 678px) {
+@media all and (min-width: 1101px) {
   footer .nav-list {
     display: flex;
     gap: 80px;
@@ -791,7 +887,7 @@ footer .nav-list {
 footer .nav-list--item {
   margin-bottom: 8px;
 }
-@media all and (min-width: 678px) {
+@media all and (min-width: 1101px) {
   footer .nav-list--item {
     display: inline-block;
   }
