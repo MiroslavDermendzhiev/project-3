@@ -44,36 +44,15 @@
     font-weight: 500;
   }
 
-  &--heart_container_icon {
-    transform: scale(1.4, 1.6);
-  }
-  .fa-solid {
-    opacity: 0;
-    transition: opacity 500ms;
-  }
   .restaurants-cards--heart_container {
     height: 27px;
     width: 23px;
     position: relative;
     bottom: 82px;
     left: 290px;
-    &_icon {
-      position: absolute;
-    }
   }
+  @include heart;
 
-  div.restaurants-cards--heart_container:hover {
-    .fa-solid {
-      opacity: 1;
-      background: -webkit-linear-gradient(
-        270deg,
-        $clr-primary 0%,
-        $clr-secondary 100%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
   &:hover {
     scale: 1.05;
   }
