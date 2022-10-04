@@ -1,0 +1,15 @@
+@mixin animation-menu_items {
+  .menu-content-buttons {
+    animation: appear 2s 3s forwards;
+  }
+  @keyframes appear {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}
