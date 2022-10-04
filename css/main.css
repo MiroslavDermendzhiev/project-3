@@ -481,9 +481,44 @@ template {
 .restaurants-main .menu-enchanted_only {
   height: 1300px;
 }
+@media all and (min-width: 1101px) {
+  .restaurants-main .menu-enchanted_only {
+    height: 680px;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
+  .restaurants-main .menu-enchanted_only {
+    height: 980px;
+  }
+}
 
 .restaurant-main--enchanted_only {
   height: 1520px;
+}
+@media all and (min-width: 1101px) {
+  .restaurant-main--enchanted_only {
+    height: 900px;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
+  .restaurant-main--enchanted_only {
+    height: 1200px;
+  }
+}
+
+.restaurant-main--img_div_enchanted_only {
+  overflow: hidden;
+  position: absolute;
+}
+@media all and (min-width: 1101px) {
+  .restaurant-main--img_div_enchanted_only {
+    height: 900px;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 768px) {
+  .restaurant-main--img_div_enchanted_only {
+    height: 1200px;
+  }
 }
 
 .restaurants-header {

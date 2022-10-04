@@ -128,8 +128,30 @@
   }
   .menu-enchanted_only {
     height: 1300px;
+    @include desktop-only {
+      height: 680px;
+    }
+    @include tablet-only {
+      height: 980px;
+    }
   }
 }
 .restaurant-main--enchanted_only {
   height: 1520px;
+  @include desktop-only {
+    height: 900px;
+  }
+  @include tablet-only {
+    height: 1200px;
+  }
+}
+.restaurant-main--img_div_enchanted_only {
+  overflow: hidden;
+  position: absolute;
+  @include desktop-only {
+    height: 900px;
+  }
+  @include tablet-only {
+    height: 1200px;
+  }
 }
