@@ -524,6 +524,7 @@ template {
 }
 
 .menu-content-buttons {
+  opacity: 0;
   animation: appear 2s 3s forwards;
 }
 
@@ -537,6 +538,22 @@ template {
     opacity: 1;
   }
 }
+.first-content-btn {
+  animation-delay: 3.2s;
+}
+
+.second-content-btn {
+  animation-delay: 3.4s;
+}
+
+.third-content-btn {
+  animation-delay: 3.6s;
+}
+
+.forth-content-btn {
+  animation-delay: 3.8s;
+}
+
 .restaurants-header {
   height: 65px;
   display: flex;

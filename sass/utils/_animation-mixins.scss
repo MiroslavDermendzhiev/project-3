@@ -1,5 +1,6 @@
 @mixin animation-menu_items {
   .menu-content-buttons {
+    opacity: 0;
     animation: appear 2s 3s forwards;
   }
   @keyframes appear {
@@ -12,4 +13,26 @@
       opacity: 1;
     }
   }
+
+  //   .proba-grashka {
+  //     animation-delay: 4s;
+  //   }
+  .first-content-btn {
+    animation-delay: 3.2s;
+  }
+  .second-content-btn {
+    animation-delay: 3.4s;
+  }
+  .third-content-btn {
+    animation-delay: 3.6s;
+  }
+  .forth-content-btn {
+    animation-delay: 3.8s;
+  }
+  //   .menu-content:nth-child(3) {
+  //     animation-delay: 5s;
+  //   }
+  //   .menu-content:nth-of-type(4) {
+  //     animation-delay: 6s;
+  //   }
 }
