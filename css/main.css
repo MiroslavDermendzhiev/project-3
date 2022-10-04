@@ -445,21 +445,54 @@ template {
   align-content: space-between;
   padding: 0px 10px;
   box-shadow: 0 2px 20px -8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 .restaurants-main .menu-content-buttons_title {
   margin-bottom: 0px;
   font-size: 18px;
   margin-top: 13px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 289px;
+  transition: width 1s ease-out;
 }
 .restaurants-main .menu-content-buttons_description {
   margin-bottom: 0px;
   margin-top: 4px;
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 256px;
+  margin-right: 33px;
+  transition: width 1s ease-out;
 }
 .restaurants-main .menu-content-buttons_price {
   margin-right: 10px;
   margin-top: 40px;
   font-weight: 600;
+  width: 30px;
+}
+.restaurants-main .menu-content-buttons:hover::after {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  width: 60px;
+  display: flex;
+  height: 100%;
+  background-color: #99e2d0;
+  font-weight: 900;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 10px;
+}
+.restaurants-main .menu-content-buttons:hover .menu-content-buttons_description {
+  width: 186px;
+}
+.restaurants-main .menu-content-buttons:hover .menu-content-buttons_title {
+  width: 220px;
 }
 .restaurants-main .menu-order {
   text-align: center;
@@ -525,10 +558,10 @@ template {
 
 .menu-content-buttons {
   opacity: 0;
-  animation: appear 2s 3s forwards;
+  animation: menu-loading 2s 3s forwards;
 }
 
-@keyframes appear {
+@keyframes menu-loading {
   from {
     transform: translateY(20px);
     opacity: 0;

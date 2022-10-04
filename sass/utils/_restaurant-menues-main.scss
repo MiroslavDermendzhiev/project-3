@@ -104,20 +104,56 @@
         align-content: space-between;
         padding: 0px 10px;
         box-shadow: 0 2px 20px -8px rgb(0 0 0 / 30%);
+        overflow: hidden;
         &_title {
           margin-bottom: 0px;
           font-size: 18px;
           margin-top: 13px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 289px;
+          @include checkmark;
         }
         &_description {
           margin-bottom: 0px;
           margin-top: 4px;
           font-size: 15px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 256px;
+          margin-right: 33px;
+          @include checkmark;
         }
         &_price {
           margin-right: 10px;
           margin-top: 40px;
           font-weight: 600;
+          width: 30px;
+        }
+
+        &:hover::after {
+          content: "\f058";
+          font-family: "Font Awesome 5 Free";
+          width: 60px;
+          display: flex;
+          height: 100%;
+          background-color: $clr-tertiary;
+          font-weight: 900;
+          color: white;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          left: 10px;
+        }
+        &:hover {
+          .menu-content-buttons_description {
+            width: 186px;
+          }
+          .menu-content-buttons_title {
+            width: 220px;
+          }
         }
       }
     }
@@ -158,4 +194,4 @@
   }
 }
 
-@include animation-menu_items;
+@include animation-menu_loading;
