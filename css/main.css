@@ -433,6 +433,8 @@ template {
   padding-bottom: 5px;
 }
 .restaurants-main .menu-content-buttons {
+  text-decoration: none;
+  color: black;
   border: none;
   border-radius: 15px;
   background: white;
