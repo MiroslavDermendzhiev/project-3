@@ -489,10 +489,6 @@ template {
   left: 10px;
   transition: width 0.5s ease-out;
 }
-.restaurants-main .menu-content-buttons .checkmark-container--icon {
-  transform: rotate(0);
-  transition: transform 0.5s ease-out;
-}
 .restaurants-main .menu-content-buttons:hover .menu-content-buttons_description {
   width: 186px;
 }
@@ -502,8 +498,17 @@ template {
 .restaurants-main .menu-content-buttons:hover .checkmark-container {
   width: 60px;
 }
-.restaurants-main .menu-content-buttons:hover .checkmark-container--icon {
-  transform: rotate(360deg);
+.restaurants-main .menu-content-buttons:hover .checkmark-container .checkmark-container--icon {
+  transform: rotate(0);
+  animation: rotation 0.5s 0s forwards;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .restaurants-main .menu-order {
   text-align: center;

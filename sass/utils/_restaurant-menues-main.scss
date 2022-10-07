@@ -146,10 +146,6 @@
           position: relative;
           left: 10px;
           @include checkmark;
-          &--icon {
-            transform: rotate(0);
-            transition: transform 0.5s ease-out;
-          }
         }
 
         &:hover {
@@ -161,9 +157,7 @@
           }
           .checkmark-container {
             width: 60px;
-            &--icon {
-              transform: rotate(360deg);
-            }
+            @include checkmark-rotate;
           }
         }
       }
