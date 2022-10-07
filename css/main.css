@@ -371,7 +371,7 @@ template {
   justify-content: space-between;
   margin: 10px 40px 0px 20px;
 }
-.restaurants-main .menu-title h2 {
+.restaurants-main .menu-title h1 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   font-weight: 500;
@@ -380,6 +380,7 @@ template {
 .restaurants-main .menu-title .restaurants-cards--heart_container {
   height: 20px;
   width: 18px;
+  cursor: pointer;
 }
 .restaurants-main .menu-title .restaurants-cards--heart_container_icon {
   transform: scale(1.4, 1.6);
@@ -455,7 +456,7 @@ template {
   overflow: hidden;
   white-space: nowrap;
   width: 289px;
-  transition: width 1s ease-out;
+  transition: width 0.5s ease-out;
 }
 .restaurants-main .menu-content-buttons_description {
   margin-bottom: 0px;
@@ -466,7 +467,7 @@ template {
   white-space: nowrap;
   width: 256px;
   margin-right: 33px;
-  transition: width 1s ease-out;
+  transition: width 0.5s ease-out;
 }
 .restaurants-main .menu-content-buttons_price {
   margin-right: 10px;
@@ -474,25 +475,35 @@ template {
   font-weight: 600;
   width: 30px;
 }
-.restaurants-main .menu-content-buttons:hover::after {
-  content: "\f058";
-  font-family: "Font Awesome 5 Free";
-  width: 60px;
+.restaurants-main .menu-content-buttons .checkmark-container {
+  width: 0px;
   display: flex;
   height: 100%;
   background-color: #99e2d0;
   font-weight: 900;
+  font-size: 20px;
   color: white;
   align-items: center;
   justify-content: center;
   position: relative;
   left: 10px;
+  transition: width 0.5s ease-out;
+}
+.restaurants-main .menu-content-buttons .checkmark-container--icon {
+  transform: rotate(0);
+  transition: transform 0.5s ease-out;
 }
 .restaurants-main .menu-content-buttons:hover .menu-content-buttons_description {
   width: 186px;
 }
 .restaurants-main .menu-content-buttons:hover .menu-content-buttons_title {
   width: 220px;
+}
+.restaurants-main .menu-content-buttons:hover .checkmark-container {
+  width: 60px;
+}
+.restaurants-main .menu-content-buttons:hover .checkmark-container--icon {
+  transform: rotate(360deg);
 }
 .restaurants-main .menu-order {
   text-align: center;
@@ -558,7 +569,7 @@ template {
 
 .menu-content-buttons {
   opacity: 0;
-  animation: menu-loading 2s 3s forwards;
+  animation: menu-loading 2s 0s forwards;
 }
 
 @keyframes menu-loading {
@@ -572,19 +583,19 @@ template {
   }
 }
 .first-content-btn {
-  animation-delay: 3.2s;
+  animation-delay: 0.2s;
 }
 
 .second-content-btn {
-  animation-delay: 3.4s;
+  animation-delay: 0.4s;
 }
 
 .third-content-btn {
-  animation-delay: 3.6s;
+  animation-delay: 0.6s;
 }
 
 .forth-content-btn {
-  animation-delay: 3.8s;
+  animation-delay: 0.8s;
 }
 
 .restaurants-header {

@@ -1,7 +1,7 @@
 @mixin animation-menu_loading {
   .menu-content-buttons {
     opacity: 0;
-    animation: menu-loading 2s 3s forwards;
+    animation: menu-loading 2s 0s forwards;
   }
   @keyframes menu-loading {
     from {
@@ -14,21 +14,21 @@
     }
   }
   .first-content-btn {
-    animation-delay: 3.2s;
+    animation-delay: 0.2s;
   }
   .second-content-btn {
-    animation-delay: 3.4s;
+    animation-delay: 0.4s;
   }
   .third-content-btn {
-    animation-delay: 3.6s;
+    animation-delay: 0.6s;
   }
   .forth-content-btn {
-    animation-delay: 3.8s;
+    animation-delay: 0.8s;
   }
 }
 
 @mixin checkmark {
-  transition: width 1s ease-out;
+  transition: width 0.5s ease-out;
 }
 
 @mixin gredient-button {
