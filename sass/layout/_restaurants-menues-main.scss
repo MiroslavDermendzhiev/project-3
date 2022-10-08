@@ -27,13 +27,12 @@
     @include desktop-only {
       height: 550px;
       max-width: 1150px;
-    } // 1300 for enchanted plate
+    }
     background: $clr-bckgr--primary;
     position: relative;
     border-radius: 40px 40px 0px 0px;
     top: 220px;
-    width: 375px; //min-width: 375px;
-    // width: 100%; //if I want to make the menues be 100% width just add the property here****************8
+    width: 375px;
     @include tablet-only {
       width: 769px;
     }
