@@ -1,23 +1,2 @@
-.restaurants-header {
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 24px;
-  .fa-arrow-left {
-    font-size: 20px;
-    color: $text-clr--light;
-  }
-  &--logo_img {
-    width: 165px;
-    margin-top: 10px;
-  }
-  .restaurants-header--empty_div {
-    display: inline-block;
-    width: 17.5px;
-    height: 20px;
-  }
-}
-// .main-img {
-//   width: 100%;
-// }
+@import "../pages/restaurants-menues-header";
+@import "../utils/restaurant-menues-main";
