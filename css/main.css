@@ -499,17 +499,19 @@ template {
 }
 .restaurants-main .menu-content-buttons .checkmark-container {
   width: 0px;
-  display: flex;
   height: 100%;
   background-color: #99e2d0;
   font-weight: 900;
   font-size: 20px;
   color: white;
-  align-items: center;
-  justify-content: center;
   position: relative;
   left: 10px;
   transition: width 0.5s ease-out;
+}
+.restaurants-main .menu-content-buttons .checkmark-container--icon {
+  position: relative;
+  left: 20px;
+  top: 24px;
 }
 .restaurants-main .menu-content-buttons:hover .menu-content-buttons_description {
   width: 186px;
@@ -529,7 +531,7 @@ template {
     transform: rotate(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(2turn);
   }
 }
 .restaurants-main .menu-order {

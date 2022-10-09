@@ -134,17 +134,19 @@
         }
         .checkmark-container {
           width: 0px;
-          display: flex;
           height: 100%;
           background-color: $clr-tertiary;
           font-weight: 900;
           font-size: 20px;
           color: white;
-          align-items: center;
-          justify-content: center;
           position: relative;
           left: 10px;
           @include checkmark;
+          &--icon {
+            position: relative;
+            left: 20px;
+            top: 24px;
+          }
         }
 
         &:hover {
